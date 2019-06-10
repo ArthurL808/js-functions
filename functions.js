@@ -1,8 +1,14 @@
+import { stringify } from "querystring";
+
 /**
  * Converts a number a string.
  * @param {number} n
  * @return {string} the number as a string
  */
+function conv(number) {
+    var number = 12
+    return number.toString()
+}console.log(conv(12))
 
 
 /**
@@ -10,14 +16,18 @@
  * @param {number} n
  * @return {number}
  */
-
+function add(number) {
+    return number + 1;
+}console.log(add(5))
 
 /**
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
-
+function sub(number) {
+    return number - 1
+}console.log(sub(11))
 
 /**
  * Adds two numbers.
@@ -25,7 +35,9 @@
  * @param {number} y
  * @return {number} the sum
  */
-
+function addBoth(x,y) {
+    return x + y;
+}console.log(addBoth(10,10))
 
 /**
  * Subtracts the second number from the first.
@@ -33,7 +45,9 @@
  * @param {number} y
  * @return {number} the difference
  */
-
+function subBoth(x,y) {
+    return y - x
+}
 
 /**
  * Multiplies two numbers.
@@ -41,7 +55,9 @@
  * @param {number} y
  * @return {number} the product
  */
-
+function mult(x,y) {
+    return x * y
+}
 
 /**
  * Divides the first number by the second.
@@ -49,14 +65,18 @@
  * @param {number} y
  * @return {number} the quotient
  */
-
+function divid(x,y) {
+    return x / y
+}
 
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
+function square(x) {
+    return x * x
+}
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -66,7 +86,10 @@
  * @param {number} y
  * @return {number} the result
  */
-
+function equation(x,y) {
+    var tot = x + y
+    return `${x} + ${y} = ${tot}`
+}console.log(equation(12,3))
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -74,7 +97,9 @@
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
-
+function greater(a,b) {
+    return a > b
+}console.log(greater(15,4))
 
 /**
  * Returns true if `a` is less than `b`.
